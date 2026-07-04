@@ -1,5 +1,7 @@
 # Contributing to foundation-site
 
+> **A note on contributions:** This repository is public for transparency, but is not yet accepting external issues or pull requests directly. Issues are disabled repo-wide, and pull requests from outside collaborators aren't reviewed at this stage. This is expected to change as the project matures — check back, or watch [openlabor.foundation](https://openlabor.foundation) for updates.
+
 This repository contains the source for [openlabor.foundation](https://openlabor.foundation).
 
 ## What belongs here
