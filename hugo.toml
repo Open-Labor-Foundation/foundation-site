@@ -1,0 +1,8 @@
+baseURL = "https://openlabor.foundation"
+locale = "en-us"
+title = "Open Labor Foundation"
+theme = "olf"
+
+[params]
+  motto = "What you know lifts us all."
+  description = "Shared knowledge infrastructure for workers — built by workers, maintained by the community, available to everyone."

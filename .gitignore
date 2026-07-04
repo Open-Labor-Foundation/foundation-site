@@ -1,0 +1,22 @@
+# Static site generator output
+public/
+dist/
+.hugo_build.lock
+.eleventy/
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+*.env
+
+# Cloudflare
+.wrangler/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
