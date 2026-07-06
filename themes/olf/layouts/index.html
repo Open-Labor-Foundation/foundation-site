@@ -26,8 +26,23 @@
       </p>
     </div>
     <div class="intro-stat">
-      <div class="intro-stat-number">Every</div>
-      <div class="intro-stat-label">profession, trade, and domain of expertise has a place in the catalog. NAICS-grounded from day one. Growing with every contribution.</div>
+      <div class="intro-stat-number" id="catalog-count">Every</div>
+      <div class="intro-stat-label">specialist definitions in the catalog — one for every profession, trade, and domain of expertise. NAICS-grounded from day one. Counted live from <a href="https://github.com/Open-Labor-Foundation/labor-commons">labor-commons</a>.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Why a commons -->
+<div class="thesis">
+  <div class="thesis-inner">
+    <p class="section-label">Why this exists</p>
+    <h2 class="section-title">Every SaaS subscription a business rents is a fee someone else decided it should pay forever.</h2>
+    <div class="thesis-body">
+      <p>A vendor solves a business's scheduling problem, or its quoting problem, or its dispatch problem — then charges for that solution every month, indefinitely, because nothing forces the price back down. Open the governance layer and the orchestration engine underneath, self-host both, and whatever one business builds to solve its own version of the problem can be handed to the next business for free — and the one after that. Function by function, the software stack an industry currently rents becomes optional.</p>
+      <p>The realistic path there is small businesses first — operators opting out of fees they already resent paying. The further destination is workers organizing regionally into collectives that own this layer together instead of individually.</p>
+    </div>
+    <div class="thesis-callout">
+      <strong>Gig-economy platforms are the sharpest illustration of the problem.</strong> The customer pays more, the platform takes its cut, and the worker keeps what's left — a three-way extraction with the platform as toll collector. labor-commons and commons-board's collective mode are meant to let a community own that coordination layer itself, community by community, instead of renting it.
     </div>
   </div>
 </div>
@@ -60,8 +75,8 @@
 
       <div class="scenario-card">
         <p class="scenario-who">Anyone with an idea</p>
-        <h3>From idea to running software — no code required.</h3>
-        <p>commons-idea turns a plain-language description into a working local app. Describe what you want, confirm it understood you, unzip the output. Click one file. It runs. No terminal, no installation, no technical knowledge.</p>
+        <h3>From idea to running software.</h3>
+        <p>commons-idea turns a plain-language description into a spec, and often a working local app — describe what you want and confirm it understood you. No terminal or technical background needed to take part.</p>
       </div>
     </div>
   </div>
@@ -81,23 +96,28 @@
         <div class="repo-license">CC-BY-SA 4.0</div>
       </div>
       <div class="repo-item">
-        <div class="repo-name"><a href="https://github.com/Open-Labor-Foundation/commons-crew">commons-crew</a></div>
+        <div class="repo-name"><a href="https://github.com/Open-Labor-Foundation/commons-crew">commons-crew</a> <span class="repo-badge">In development</span></div>
         <div class="repo-desc">Personal assistant backed by the catalog. Assembles specialists on demand, runs a visible conversation, returns a result.</div>
         <div class="repo-license">AGPL-3.0</div>
       </div>
       <div class="repo-item">
-        <div class="repo-name"><a href="https://github.com/Open-Labor-Foundation/commons-board">commons-board</a></div>
+        <div class="repo-name"><a href="https://github.com/Open-Labor-Foundation/commons-board">commons-board</a> <span class="repo-badge">Design complete, building now</span></div>
         <div class="repo-desc">Organizational governance for any group of workers. Full operational structure, three autonomy modes, governed by policies you set.</div>
         <div class="repo-license">AGPL-3.0</div>
       </div>
       <div class="repo-item">
         <div class="repo-name"><a href="https://github.com/Open-Labor-Foundation/commons-idea">commons-idea</a></div>
-        <div class="repo-desc">Turns any idea into a working local deliverable. Plain language in, running software out. No installation required.</div>
+        <div class="repo-desc">Turns a plain-language description into a spec, and where relevant a working local deliverable — today's path for turning an idea or a specialty into something usable.</div>
         <div class="repo-license">AGPL-3.0</div>
       </div>
       <div class="repo-item">
         <div class="repo-name"><a href="https://github.com/Open-Labor-Foundation/commons-keeper">commons-keeper</a></div>
         <div class="repo-desc">Autonomous quality loop for labor-commons. Continuously validates, scores, and keeps the catalog accurate over time.</div>
+        <div class="repo-license">AGPL-3.0</div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-name"><a href="https://github.com/Open-Labor-Foundation/commons-devloop">commons-devloop</a></div>
+        <div class="repo-desc">The self-hosted autonomous engine that builds and maintains the OLF repos — and any GitHub repository, if you point it at one. Picks up issues, writes code, opens and merges its own pull requests.</div>
         <div class="repo-license">AGPL-3.0</div>
       </div>
       <div class="repo-item">
@@ -114,18 +134,32 @@
   </div>
 </div>
 
+<!-- Status -->
+<div class="status" id="status">
+  <div class="status-inner">
+    <p class="section-label">Where things stand</p>
+    <h2 class="section-title">Working today. Not yet for everyone.</h2>
+    <p class="section-sub">The honest state, so you know what you're looking at.</p>
+    <div class="status-body">
+      <p>labor-commons is live and growing — see the count above. commons-keeper runs continuously against it, validating and scoring the catalog. commons-board's design is finished and its core implementation is underway. <a href="https://github.com/Open-Labor-Foundation/commons-devloop">commons-devloop</a>, the autonomous engine that builds and maintains these repos, is functional and self-hostable by anyone.</p>
+      <p>None of that adds up to something an everyday person can pick up yet. Running any of it today requires Docker and a terminal, which rules out most of the people it's ultimately meant for. It also requires inference — either a paid API key (<a href="https://featherless.ai">Featherless.ai</a> is this project's preferred provider) or your own hardware to self-host models. That's no longer a blocker, but it's a real cost, not a hidden one. The remaining barriers are packaging and tuning. Getting from a working stack to something a small business owner or a worker with no technical background can actually use is most of the work still ahead.</p>
+    </div>
+    <a class="status-link" href="https://github.com/Open-Labor-Foundation/open-labor-foundation/blob/main/ROADMAP.md">See the full roadmap →</a>
+  </div>
+</div>
+
 <!-- Contribute -->
 <div class="contribute" id="contributing">
   <div class="contribute-inner">
     <div class="contribute-path">
       <h3>Contribute your expertise</h3>
-      <p>Use <a href="https://github.com/Open-Labor-Foundation/commons-idea">commons-idea</a> to describe what you know — the problems you solve, the decisions you make, what good work looks like in your field. It asks questions, confirms what it heard, and produces a complete written record of your expertise. Submit it to <a href="https://github.com/Open-Labor-Foundation/labor-commons">labor-commons</a>.</p>
-      <p style="margin-top:0.75rem">No code required. A streamlined contribution interface is actively in development to make this as accessible as possible.</p>
+      <p>Every profession, trade, and domain of expertise has a place in <a href="https://github.com/Open-Labor-Foundation/labor-commons">labor-commons</a>. If you know a field well enough to say what good work in it looks like, that knowledge belongs here.</p>
+      <p style="margin-top:0.75rem">The contribution path is still being finalized — <a href="https://github.com/Open-Labor-Foundation/labor-commons/blob/main/CONTRIBUTING.md">check labor-commons' current status</a> before submitting anything. An easier way in is on the roadmap.</p>
     </div>
     <div class="contribute-path">
-      <h3>Contribute an idea</h3>
-      <p>commons-idea handles any idea — not just specialist knowledge. Describe what you want to exist. It produces a written record and a working version that runs on your device with one click.</p>
-      <p style="margin-top:0.75rem">Share the record in <a href="https://github.com/Open-Labor-Foundation/commons-specs">commons-specs</a>. Share the working version in <a href="https://github.com/Open-Labor-Foundation/commons-artifacts">commons-artifacts</a>. Others build on what you made.</p>
+      <h3>Run it yourself</h3>
+      <p><a href="https://github.com/Open-Labor-Foundation/commons-board">commons-board</a>, <a href="https://github.com/Open-Labor-Foundation/commons-keeper">commons-keeper</a>, and <a href="https://github.com/Open-Labor-Foundation/commons-devloop">commons-devloop</a> are public and self-hostable today, AGPL-3.0. Clone any of them, read how they work, run them on your own hardware.</p>
+      <p style="margin-top:0.75rem">None of the three are open to outside pull requests yet — issues are disabled while the core build is still underway. Watch the repos or this site for when that changes.</p>
     </div>
   </div>
 </div>
