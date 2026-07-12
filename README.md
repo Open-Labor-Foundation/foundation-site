@@ -4,6 +4,12 @@ Source for [openlabor.foundation](https://openlabor.foundation) — the public h
 
 Fully static. No server, no database, no application layer. Deployed via Cloudflare Pages with Cloudflare DNS and CDN.
 
+> See [open-labor-foundation/ARCHITECTURE.md](https://github.com/Open-Labor-Foundation/open-labor-foundation/blob/main/ARCHITECTURE.md)
+> for the full ecosystem picture and current known shortcomings across the
+> stack. No shortcoming in this repo itself, but site copy describing other
+> repos' status should stay checked against that reference rather than drift
+> independently.
+
 ---
 
 ## Stack
