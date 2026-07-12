@@ -6,9 +6,13 @@ Fully static. No server, no database, no application layer. Deployed via Cloudfl
 
 > See [open-labor-foundation/ARCHITECTURE.md](https://github.com/Open-Labor-Foundation/open-labor-foundation/blob/main/ARCHITECTURE.md)
 > for the full ecosystem picture and current known shortcomings across the
-> stack. No shortcoming in this repo itself, but site copy describing other
-> repos' status should stay checked against that reference rather than drift
-> independently.
+> stack. Site copy describing other repos' status should stay checked against
+> that reference rather than drift independently. One concrete, known gap in
+> this repo: `themes/olf/static/js/catalog-count.js` counts labor-commons
+> specialists by matching only `catalog/naics-overlays/**/spec.yaml` — once
+> labor-commons gains a second catalog axis (`catalog/function-overlays/`,
+> planned, not yet built), this script will need widening or the displayed
+> count will silently undercount.
 
 ---
 
