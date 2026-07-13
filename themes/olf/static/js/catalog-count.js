@@ -4,9 +4,13 @@
   var el = document.getElementById("catalog-count");
   if (!el) return;
 
-  var CACHE_KEY = "olf-catalog-count-v1";
+  // v2: labor-commons gained a second catalog axis (function-overlays,
+  // generic corporate-function specialists) alongside naics-overlays
+  // (industry-vertical). Bumped the cache key so no stale v1 count
+  // (naics-overlays only) lingers in anyone's browser for the old TTL.
+  var CACHE_KEY = "olf-catalog-count-v2";
   var CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
-  var SPEC_PATTERN = /^catalog\/naics-overlays\/[^/]+\/[^/]+\/spec\.yaml$/;
+  var SPEC_PATTERN = /^catalog\/(naics-overlays|function-overlays)\/[^/]+\/[^/]+\/spec\.yaml$/;
 
   function render(count) {
     el.textContent = count.toLocaleString("en-US");
